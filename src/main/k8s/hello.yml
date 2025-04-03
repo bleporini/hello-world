@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: bleporini/hello-world:${git.commit.id.abbrev}
+          image: bleporini/hello-world:${pipeline_id}
           ports:
             - containerPort: 8080
 ---
