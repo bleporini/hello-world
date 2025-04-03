@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: bleporini/hello-world:${IMAGE_TAG}
+          image: bleporini/hello-world:${git.commit.id.abbrev}
           ports:
             - containerPort: 8080
 ---
