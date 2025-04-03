@@ -21,7 +21,7 @@ public class Main {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
             if ("GET".equals(exchange.getRequestMethod())) {
-                String response = "Hello, world 3!\n  ";
+                String response = "Hello, world 4!\n  ";
                 exchange.sendResponseHeaders(200, response.getBytes().length);
                 OutputStream os = exchange.getResponseBody();
                 os.write(response.getBytes());
